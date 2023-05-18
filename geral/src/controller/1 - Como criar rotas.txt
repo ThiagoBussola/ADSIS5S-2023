@@ -1,0 +1,10 @@
+1 - Como criar rotas
+2 - Como fazer uma requisição
+3 - Criar um servidor com a função listen do express
+4 - Criar uma controller
+5 - O que são funções assíncronas
+6 - O que são middlewares
+7 - Já exportar uma classe instanciada
+8 - Construir uma classe com as configurações da aplicação
+9 - Básico de arquitetura MVC
+10 - Try Catch

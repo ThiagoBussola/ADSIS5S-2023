@@ -1,0 +1,16 @@
+1 - Cadastre 10 produtos no banco de dados
+
+2 - Crie uma service chamada estoque
+
+3 - Nessa service utilize o map para adicionar o campo stock Value
+e Multiplique o quantity pelo price e depois salve essa nova estrutura em uma "tabela" chamada
+productStock
+
+4 - Na service de produtos crie uma rota que busque 10 produtos e retorne 4 de maneira aleatórios
+
+5 - Na service de stock busque todos os itens do banco e utilizando o reduce traga o valor total
+     do stock e disponibilize isso em uma rota
+6 - Na service de produtos crie um método que busca todos os produtos do banco e 
+    os escreve em um arquivo de texto
+
+7 - Crie uma rota que dispare uma função que lê o arquivo de produtos e retorna seus valores
