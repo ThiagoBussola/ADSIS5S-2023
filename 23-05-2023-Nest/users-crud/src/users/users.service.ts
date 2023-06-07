@@ -9,6 +9,19 @@ import { Model } from 'mongoose';
 export class UsersService {
   constructor(@InjectModel(User.name) private userModel: Model<User>) {}
 
+  private readonly users = [
+    {
+      userId: 1,
+      username: 'john',
+      password: 'changeme',
+    },
+    {
+      userId: 2,
+      username: 'maria',
+      password: 'guess',
+    },
+  ];
+
   create(createUserDto: CreateUserDto) {
     const createdUser = this.userModel.create(createUserDto);
     return createdUser;
@@ -17,6 +30,10 @@ export class UsersService {
   findAll() {
     const findedUsers = this.userModel.find();
     return findedUsers;
+  }
+
+  find(username: string) {
+    return this.users.find(user => user.username === username);
   }
 
   findOne(id: string) {
