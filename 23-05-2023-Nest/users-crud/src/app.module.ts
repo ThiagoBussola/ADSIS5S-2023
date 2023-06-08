@@ -2,9 +2,11 @@ import { Module, NestModule, MiddlewareConsumer, RequestMethod } from '@nestjs/c
 import { UsersModule } from './users/users.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
+import { AuthModule } from './auth/auth.module';
+import { ProductsModule } from './products/products.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://0.0.0.0/nest'), UsersModule],
+  imports: [MongooseModule.forRoot('mongodb://0.0.0.0/nest'), UsersModule, AuthModule, ProductsModule],
   controllers: [],
   providers: [],
 })
